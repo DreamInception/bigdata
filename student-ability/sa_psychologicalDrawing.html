@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学生心理画像</title>
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/sa_psychologicalDrawing.css">
+    <script src="js/lib/echarts.js"></script>
+    <script src="js/lib/jquery.min.js"></script>
+    <!--<script src="js/lib/vue.js"></script>
+    <script src="js/public.js"></script>-->
+    <script src="js/sa_psychologicalDrawing.js"></script>
+</head>
+<body>
+<article id="pd_app">
+   <!-- <v_header :cur="5"></v_header>-->
+    <header>
+        <div>
+            <a href="../index.html"></a>
+            <ul>
+                <li>
+                    <a href="sa_index.html">首页</a>
+                </li>
+                <li>
+                    <a href="sa_comprehensiveAbilities.html">综合能力诊断</a>
+                </li>
+                <li>
+                    <a href="sa_learningDisability.html">学习困难评估</a>
+                </li>
+                <li>
+                    <a href="sa_learningPerformance.html">学习绩效分析</a>
+                </li>
+                <li>
+                    <a href="sa_psychologicalDrawing.html" class="selected">学生心理画像</a>
+                </li>
+            </ul>
+            <div>
+                <span>李梅，欢迎您！</span>
+                <div>
+                    <img src="images/peo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="peo_infor clearfix">
+        <dl>
+            <dt class="pho">
+                <img src="images/peo.png" alt="">
+            </dt>
+            <dd>李梅</dd>
+            <dd>初二一班</dd>
+            <!--<dd>学校</dd>-->
+        </dl>
+        <div class="contshow">
+            <!--<div><span>能力解读</span>ABILITY INTERPRETATION</div>-->
+            <p>李梅同学具有较强的自我意识和独立意识，具有执着、热情、自信、自律、外向等心理特征。其学习风格以场独立型为主，学习动机较强、自我效能感很好、具有积极的情绪特征和较强的自我成就归因，在人格特征上偏向于外倾型、开放性和尽责性的人格，在策略特征上具较强的认知策略、元认知策略和资源管理策略。</p>
+        </div>
+    </div>
+    <div class="con">
+        <img src="images/pd2.png" alt="">
+    </div>
+    <div class="con1">
+         <img src="images/zf.png" style="margin:37px 0 0 20px;float:left">
+        <div class="zfcon">
+            <p>李梅是场独立型的学习风格，建议老师多给他自主学习的环境。</p>
+            <p>李梅的学习动机较强，具有较强的求知欲和学习兴趣，宜在给李梅同学提供学习支持的基础上，鼓励自己探索。</p>
+            <p>李梅的自我效能感很高，对自己很自信。</p>
+            <p>李梅同学拥有更多积极情绪，对于学习更执着、更有热情，要时刻维持其积极情绪。</p>
+            <p>李梅在成就归因上更倾向归因于个人，并希望通过自身努力获得进步。</p>
+        </div>
+        <!--<div id="chartA"></div>-->
+    </div>
+    <div class="con3">
+        <div class="til">人格特征</div>
+        <p>李梅偏向于外倾性、开放性和尽责性的人格，因此一方面需要发挥他的优点，发挥他的模范带头作用，带领大家搞好班级气氛，活跃课堂气氛，促进合作学习。</p>
+        <div id="chartB"></div>
+    </div>
+    <div class="con4">
+        <div class="til">策略特征</div>
+        <p>李梅在认知策略、元认知策略、资源管理策略方面都较强，能够合理统筹安排学习时间、树立信念、激发内在动机。</p>
+        <div id="chartC"></div>
+    </div>
+</article>
+<footer class="bbs_footer">
+    <div class="bbs_footer_m">
+        <div class="bbs_footer_l">
+            <span class="bbs_footer_t">合作伙伴</span>
+            <ul>
+                <li><a href="#">科大讯飞</a></li>
+                <li><a href="#">北京师范大学</a></li>
+                <li><a href="#">基础教育大数据国家工程实验室</a></li>
+                <li><a href="#">洛阳市政府</a></li>
+                <li><a href="#">MIT</a></li>
+                <li><a href="#">Dublin City University</a></li>
+                <li><a href="#">浙江金华市政府</a></li>
+                <li><a href="#">University of Piraeus</a></li>
+                <li><a href="#">OUC (Barcelona)</a></li>
+                <li><a href="#">贵州清镇市</a></li>
+                <li><a href="#">Athabasca University </a></li>
+                <li><a href="#">UNESCO on e-learning & OER </a></li>
+                <li><a href="#">成都双流区</a></li>
+                <li><a href="#">Harvard University </a></li>
+                <li><a href="#">University of London</a></li>
+
+            </ul>
+        </div>
+        <div class="bbs_footer_r">
+            <a class="bbs_f_about" href="#">关于我们</a>
+            <span class="bbs_f_contact">联系方式</span>
+            <ul>
+                <li><span>邮政编码：100875</span></li>
+                <li><span>地址：学院南路12号京师科技大厦A座3楼</span></li>
+                <li><span>邮箱：icome@bnu.edu.cn</span></li>
+                <li><span>Copyright © 基础教育大数据应用研究院</span></li>
+                <li>
+                    <a class="a1" href="#"></a>
+                    <a class="a2" href="#"></a>
+                    <a class="a3" href="#"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

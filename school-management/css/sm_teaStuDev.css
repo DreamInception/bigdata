@@ -1,0 +1,212 @@
+.section{
+    background: #fff;
+    width: 1140px;
+    height: 510px;
+    margin: 0 auto;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.section1{
+    margin-top: 60px;
+
+}
+.section .top{
+    height: 37px;
+    /*line-height: 37px;*/
+}
+.section .top .title{
+    width: 160px;
+    height: 20px;
+    line-height: 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    /*border-left: solid 3px #164370;*/
+}
+.section .top .title span{
+    border-left: 2px solid #3D3730; padding-left: 10px; font-size: 16px; font-weight: bold; color: #565554; margin-bottom: 20px;
+}
+.first-select{
+    width: 167px;
+    margin: 8px 0;
+}
+.chartsFirst{
+    margin-top: 20px;
+}
+.charts0{
+    width: 414px;
+    height: 380px;
+}
+.charts1{
+    width: 605px;
+    height: 415px;
+}
+.charts2{
+    width: 900px;
+    height: 320px;
+    /*margin-top: 60px;*/
+}
+.charts3{
+    width: 100%;
+    height: 320px;
+    /*margin-top: 36px;*/
+}
+.lastSection{
+    padding: 40px 0;
+    background: #dcdcdd;
+    /*background: url("../images/tsBg.png") no-repeat;*/
+}
+.lastSection ul{
+    margin-top: 30px;
+}
+.lastSection ul li{
+    line-height: 15px;
+    margin-bottom: 15px;
+}
+.selectBox-dropdown{
+    max-width: 250px;
+}
+.chartsFirst .names{
+    width: 55px;
+    padding-right: 12px;
+    font-size: 12px;
+}
+.chartsFirst .names li{
+    height: 15px;
+    line-height: 15px;
+    text-align: right;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.chartsFirst .values{
+    width: 360px;
+    height: 380px;
+    border-left: solid 1px #3d3730;
+    padding: 38px 10px 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-size: 12px;
+    position: relative;
+}
+.chartsFirst .values .progress{
+    float: left;
+    cursor: pointer;
+}
+.chartsFirst .values .percent{
+    float: left;
+    padding-left: 10px;
+    line-height: 12px;
+}
+.progressbar{
+    margin-top: 0px!important;
+    margin-bottom: 25px!important;
+}
+.hline{
+    width: 304px;
+    height: 1px;
+    background: #3d3730;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+.xAname{
+    position: absolute;
+    right: 3px;
+    bottom: -15px;
+}
+.chartsFirst .right{
+    padding-left: 150px;
+}
+.matrix{
+    width: 350px;
+    height: 380px;
+    border-left: solid 1px #3d3730;
+    border-bottom: solid 1px #3d3730;
+    position: relative;
+}
+.matrix .row{
+    padding: 23px 0 0 20px;
+}
+.matrix .row:first-child{
+    padding-top: 36px;
+}
+.matrix .row .even{
+    width: 12px;
+    height: 12px;
+    background: #f4f4f4;
+    float: left;
+}
+.matrix .row .odd{
+    width: 12px;
+    height: 12px;
+    background: #dcdcdc;
+    position: relative;
+    float: left;
+}
+.matrix .row .odd i{
+    display: none;
+    position: absolute;
+    top: 14px;
+    left: 10px;
+    width:100px;
+    padding:5px 8px;
+    background: url(../images/sm_rm_icon3.png) repeat top left;
+    border-radius: 5px;
+    z-index: 3;
+    font-style: normal;
+}
+.matrix .row .odd i .subTitle{
+    font-size: 14px;
+    font-weight: 600;
+    /*display: block;*/
+    font-style: normal;
+}
+.matrix .row .odd em{
+    font-style: normal;
+}
+.xBname{
+    position: absolute;
+    bottom: -20px;
+    right: -50px;
+    font-size: 12px;
+}
+.high{
+    background: #62c554!important;
+}
+.medium{
+    background: #efcf68!important;
+}
+.low{
+    background: #ed7063!important;
+}
+.matchTxt{
+    width: 435px;
+    height: 16px;
+    margin: 20px auto;
+}
+.matchTxt .point{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    /*float: left;*/
+    margin-top: 3px;
+}
+.matchTxt .txt{
+    padding: 0 8px;
+}
+.matchTxt span{
+    float: left;
+}
+.growSize{
+    transition:transform 0.25s ease;
+}
+.growSize:hover{
+    transform:scale(1.5,1.5);
+    z-index: 100;
+}
+
+

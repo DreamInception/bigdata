@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学习困难评估</title>
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/sa_comprehensiveAbilities.css">
+    <script src="js/lib/jquery.min.js"></script>
+   <!-- <script src="js/lib/vue.js"></script>-->
+    <script src="js/lib/echarts.js"></script>
+    <script src="js/lib/echarts-liquidfill.js"></script>
+   <!-- <script src="js/public.js"></script>-->
+    <script src="js/sa_learningDisability.js"></script>
+</head>
+<body>
+<article id="ld_app">
+   <!-- <v_header :cur="3"></v_header>-->
+    <header>
+        <div>
+            <a href="../index.html"></a>
+            <ul>
+                <li>
+                    <a href="sa_index.html">首页</a>
+                </li>
+                <li>
+                    <a href="sa_comprehensiveAbilities.html">综合能力诊断</a>
+                </li>
+                <li>
+                    <a href="sa_learningDisability.html" class="selected">学习困难评估</a>
+                </li>
+                <li>
+                    <a href="sa_learningPerformance.html">学习绩效分析</a>
+                </li>
+                <li>
+                    <a href="sa_psychologicalDrawing.html">学生心理画像</a>
+                </li>
+            </ul>
+            <div>
+                <span>李梅，欢迎您！</span>
+                <div>
+                    <img src="images/peo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="peo_infor clearfix">
+        <dl>
+            <dt class="pho">
+                <img src="images/peo.png" alt="">
+            </dt>
+            <dd>李梅</dd>
+            <dd>初二一班</dd>
+            <!--<dd>学校</dd>-->
+        </dl>
+        <div class="contshow">
+            <!--<div><span>能力解读</span>ABILITY INTERPRETATION</div>-->
+            <p>李梅同学在学习上遇到的困难适中，暂时没有遇到影响自身学习的困难，并且在学习动机和学习态度上表现良好。相比较而言，在能力上，尤其是数学方面的能力，比如逻辑推理能力和运算能力上遇到了些许困难。</p>
+        </div>
+    </div>
+    <div class="show show1 clearfix">
+        <dl>
+            <dt style="margin-bottom:130px">
+            <p class="select" data_index="0">学困评估值</p>
+            <img src="images/star1.png" alt="">
+            <span>17.92%</span>
+            </dt>
+            <dd>
+                <p data_index="1">暂时性困难</p>
+                <div>
+                    <div></div>
+                </div>
+                <span></span>
+            </dd>
+            <dd>
+                <p data_index="2">能力型困难</p>
+                <div>
+                    <div></div>
+                </div>
+                <span></span>
+            </dd>
+            <dd>
+                <p data_index="3">动力型困难</p>
+                <div>
+                    <div></div>
+                </div>
+                <span></span>
+            </dd>
+        </dl>
+        <div class="clearfix">
+            <div id="chartA"></div>
+            <div id="chartE"></div>
+            <div id="chartH" class="clearfix">
+                <div id="chartH1"></div>
+                <div id="chartH2"></div>
+                <div id="chartH3"></div>
+                <div class="hintword">学习动机：20%</div>
+                <div class="hintword">学习态度：5%</div>
+                <div class="hintword">情绪：10%</div>
+            </div>
+            <div id="chartG"></div>
+        </div>
+    </div>
+</article>
+<footer class="bbs_footer">
+    <div class="bbs_footer_m">
+        <div class="bbs_footer_l">
+            <span class="bbs_footer_t">合作伙伴</span>
+            <ul>
+                <li><a href="#">科大讯飞</a></li>
+                <li><a href="#">北京师范大学</a></li>
+                <li><a href="#">基础教育大数据国家工程实验室</a></li>
+                <li><a href="#">洛阳市政府</a></li>
+                <li><a href="#">MIT</a></li>
+                <li><a href="#">Dublin City University</a></li>
+                <li><a href="#">浙江金华市政府</a></li>
+                <li><a href="#">University of Piraeus</a></li>
+                <li><a href="#">OUC (Barcelona)</a></li>
+                <li><a href="#">贵州清镇市</a></li>
+                <li><a href="#">Athabasca University </a></li>
+                <li><a href="#">UNESCO on e-learning & OER </a></li>
+                <li><a href="#">成都双流区</a></li>
+                <li><a href="#">Harvard University </a></li>
+                <li><a href="#">University of London</a></li>
+
+            </ul>
+        </div>
+        <div class="bbs_footer_r">
+            <a class="bbs_f_about" href="#">关于我们</a>
+            <span class="bbs_f_contact">联系方式</span>
+            <ul>
+                <li><span>邮政编码：100875</span></li>
+                <li><span>地址：学院南路12号京师科技大厦A座3楼</span></li>
+                <li><span>邮箱：icome@bnu.edu.cn</span></li>
+                <li><span>Copyright © 基础教育大数据应用研究院</span></li>
+                <li>
+                    <a class="a1" href="#"></a>
+                    <a class="a2" href="#"></a>
+                    <a class="a3" href="#"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
+
+
+

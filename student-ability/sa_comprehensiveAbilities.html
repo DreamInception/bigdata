@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>综合能力诊断</title>
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/sa_comprehensiveAbilities.css">
+    <script src="js/lib/echarts.js"></script>
+    <script src="js/lib/jquery.min.js"></script>
+   <!-- <script src="js/lib/vue.js"></script>
+    <script src="js/public.js"></script>-->
+    <script src="js/sa_comprehensiveAbilities.js"></script>
+</head>
+<body>
+<article id="com_app">
+    <!--<v_header :cur="2"></v_header>-->
+    <header>
+        <div>
+            <a href="../index.html"></a>
+            <ul>
+                <li>
+                    <a href="sa_index.html">首页</a>
+                </li>
+                <li>
+                    <a href="sa_comprehensiveAbilities.html" class="selected">综合能力诊断</a>
+                </li>
+                <li>
+                    <a href="sa_learningDisability.html">学习困难评估</a>
+                </li>
+                <li>
+                    <a href="sa_learningPerformance.html">学习绩效分析</a>
+                </li>
+                <li>
+                    <a href="sa_psychologicalDrawing.html">学生心理画像</a>
+                </li>
+            </ul>
+            <div>
+                <span>李梅，欢迎您！</span>
+                <div>
+                    <img src="images/peo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="peo_infor clearfix">
+        <dl>
+           <dt class="pho">
+               <img src="images/peo.png" alt="">
+           </dt>
+           <dd>李梅</dd>
+           <dd>初二一班</dd>
+           <!--<dd>学校</dd>-->
+        </dl>
+        <div class="contshow">
+            <!--<div><span>能力解读</span>ABILITY INTERPRETATION</div>-->
+            <p>李梅同学综合能力判断为80.0%，在班级同学中处于优秀水平。其认知能力、思维能力、信息加工能力、自主学习能力和问题解决能力均达到优秀，在调控能力、社会能力和创新能力上均为良好，达到一半水平层次。但需要重点关注该生在社会能力方面的培养，尤其是在人机交往和组织管理方面。</p>
+        </div>
+    </div>
+    <div class="show clearfix">
+        <dl>
+            <dt>
+                <p class="select" data_index="0">综合能力值</p>
+                <img src="images/star2.png">
+                <span>80%</span>
+            </dt>
+            <dd>
+                <p data_index="1">认知能力</p>
+                <div>
+                    <div></div>
+                </div>
+                <span></span>
+            </dd>
+            <dd>
+                <p data_index="2">思维能力</p>
+                <div>
+                    <div></div>
+                </div>
+                <span></span>
+            </dd>
+            <dd>
+                <p data_index="3">调控能力</p>
+                <div>
+                    <div></div>
+                </div>
+                <span></span>
+            </dd>
+            <dd>
+                <p data_index="4">信息加工能力</p>
+                <div>
+                    <div></div>
+                </div>
+                <span></span>
+            </dd>
+            <dd>
+                <p data_index="5">自主学习</p>
+                <div>
+                    <div></div>
+                </div>
+                <span></span>
+            </dd>
+            <dd>
+                <p data_index="6">社会能力</p>
+                <div>
+                    <div></div>
+                </div>
+                <span></span>
+            </dd>
+            <dd>
+                <p data_index="7">问题解决</p>
+                <div>
+                    <div></div>
+                </div>
+                <span></span>
+            </dd>
+            <dd>
+                <p data_index="8">创新能力</p>
+                <div>
+                    <div></div>
+                </div>
+                <span></span>
+            </dd>
+        </dl>
+        <div>
+            <div id="chartA"></div>
+            <div class="abiThink">
+                <img src="images/c2.png" alt="" style="width:450px;height:auto;margin:20px 0 0 110px">
+            </div>
+            <div class="chartB">
+                <div id="chartB1"></div>
+                <div id="chartB2"></div>
+                <div id="chartB3"></div>
+            </div>
+            <div class="chartC clearfix">
+                <div id="chartC1"></div>
+                <div id="chartC2"></div>
+                <div id="chartC3"></div>
+                <div class="hintword">信息搜集能力</div>
+                <div class="hintword">信息筛选能力</div>
+                <div class="hintword">信息处理能力</div>
+            </div>
+            <div class="chartD">
+                <div id="chartD1"></div>
+                <div id="chartD2"></div>
+            </div>
+            <div id="chartE"></div>
+            <div class="provSolv">
+                <dl>
+                    <dt></dt>
+                    <dd>
+                        <p>发现问题能力</p>
+                        <div>
+                            <div></div>
+                        </div>
+                        <span>78%</span>
+                    </dd>
+                    <dd>
+                        <p>分析问题能力</p>
+                        <div>
+                            <div></div>
+                        </div>
+                        <span>80%</span>
+                    </dd>
+                    <dd>
+                        <p>解决问题能力</p>
+                        <div>
+                            <div></div>
+                        </div>
+                        <span>90%</span>
+                    </dd>
+                </dl>
+            </div>
+            <div id="chartF"></div>
+            <div id="chartG"></div>
+        </div>
+    </div>
+</article>
+<footer class="bbs_footer">
+    <div class="bbs_footer_m">
+        <div class="bbs_footer_l">
+            <span class="bbs_footer_t">合作伙伴</span>
+            <ul>
+                <li><a href="#">科大讯飞</a></li>
+                <li><a href="#">北京师范大学</a></li>
+                <li><a href="#">基础教育大数据国家工程实验室</a></li>
+                <li><a href="#">洛阳市政府</a></li>
+                <li><a href="#">MIT</a></li>
+                <li><a href="#">Dublin City University</a></li>
+                <li><a href="#">浙江金华市政府</a></li>
+                <li><a href="#">University of Piraeus</a></li>
+                <li><a href="#">OUC (Barcelona)</a></li>
+                <li><a href="#">贵州清镇市</a></li>
+                <li><a href="#">Athabasca University </a></li>
+                <li><a href="#">UNESCO on e-learning & OER </a></li>
+                <li><a href="#">成都双流区</a></li>
+                <li><a href="#">Harvard University </a></li>
+                <li><a href="#">University of London</a></li>
+
+            </ul>
+        </div>
+        <div class="bbs_footer_r">
+            <a class="bbs_f_about" href="#">关于我们</a>
+            <span class="bbs_f_contact">联系方式</span>
+            <ul>
+                <li><span>邮政编码：100875</span></li>
+                <li><span>地址：学院南路12号京师科技大厦A座3楼</span></li>
+                <li><span>邮箱：icome@bnu.edu.cn</span></li>
+                <li><span>Copyright © 基础教育大数据应用研究院</span></li>
+                <li>
+                    <a class="a1" href="#"></a>
+                    <a class="a2" href="#"></a>
+                    <a class="a3" href="#"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
+
+
+

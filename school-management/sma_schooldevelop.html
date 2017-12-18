@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学校发展</title>
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/sma_schooldevelop.css">
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/echarts.js"></script>
+    <script src="js/lib/jquery.selectBox.min.js"></script>
+    <script src="js/public.js"></script>
+    <script src="js/sma_schooldevelop.js"></script>
+</head>
+<body>
+<section class="bbs_headr">
+    <div class="bbs_top_m">
+        <a href="../index.html" class="bbs_logo"></a>
+        <ul class="bbs_h_nav">
+            <li>
+                <a href="sm_index.html">首页</a>
+            </li>
+            <li class="cur">
+                <a href="sma_schooldevelop.html" class="cur">学校发展</a>
+                <div class="sm_menu">
+                    <a href="#">综合校情</a>
+                    <a href="#">高考情况</a>
+                    <a href="#">发展目标</a>
+                </div>
+            </li>
+            <li>
+                <a href="sm_teaStuDev.html">师生发展</a>
+                <div class="sm_menu">
+                    <a class="title" href="#">学生发展</a>
+                    <a href="#">学生概况</a>
+                    <a href="#">学生行为</a>
+                    <a href="#">学生成绩</a>
+                    <a class="title" href="#">教师发展</a>
+                    <a href="#">教师概况</a>
+                    <a href="#">教学表现</a>
+                    <a href="#">科研表现</a>
+                    <a href="#">教研表现</a>
+                    <a href="#">学生管理</a>
+                </div>
+            </li>
+            <li>
+                <a href="#">身心健康</a>
+                <div class="sm_menu">
+                    <a href="#">体质健康</a>
+                    <a href="#">心理健康</a>
+                </div>
+            </li>
+            <li>
+                <a href="#">平安校园</a>
+                <div class="sm_menu">
+                    <a href="#">校园人流</a>
+                    <a href="#">突发事件</a>
+                    <a href="#">学生考勤</a>
+                    <a href="#">安全教育</a>
+                </div>
+            </li>
+            <li>
+                <a href="sm_resource_monitoring.html">资源监测评价</a>
+                <div class="sm_menu">
+                    <a href="#">资源配置监测</a>
+                    <a href="#">资源配置评价</a>
+                </div>
+            </li>
+            <li>
+                <a href="sma_decisionsupport.html">学校决策支持</a>
+                <div class="sm_menu">
+                    <a href="#">高考趋势预测</a>
+                    <a href="#">教师需求预测</a>
+                    <a href="#">学生选科预测</a>
+                </div>
+            </li>
+        </ul>
+        <div class="bbs_top_r">
+            <div class="bbs_top_per">
+                <a href="../bbs/bbs_personal.html">
+                    <span>郑老师,欢迎您！</span>
+                    <img src="images/avatar.png">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="conboxt">
+    <div class="selectB clearfix">
+        <!--<select>-->
+        <!--<option value="0">选科方式</option>-->
+        <!--<option value="1">物理+化学+生物</option>-->
+        <!--<option value="2">物理+化学+历史</option>-->
+        <!--<option value="3">物理+化学+政治</option>-->
+        <!--<option value="4">物理+化学+地理</option>-->
+        <!--<option value="5">物理+生物+历史</option>-->
+        <!--<option value="6">物理+生物+政治</option>-->
+        <!--<option value="7">物理+生物+地理</option>-->
+        <!--<option value="8">物理+历史+政治</option>-->
+        <!--<option value="9">物理+历史+地理</option>-->
+        <!--<option value="10">物理+政治+地理</option>-->
+        <!--<option value="11">化学+生物+历史</option>-->
+        <!--<option value="12">化学+生物+政治</option>-->
+        <!--<option value="13">化学+生物+地理</option>-->
+        <!--<option value="14">化学+历史+政治</option>-->
+        <!--<option value="15">化学+历史+地理</option>-->
+        <!--<option value="16">化学+政治+地理</option>-->
+        <!--<option value="17">生物+历史+政治</option>-->
+        <!--<option value="18">生物+历史+地理</option>-->
+        <!--<option value="19">生物+历史+地理</option>-->
+        <!--<option value="20">历史+政治+地理</option>-->
+        <!--</select>-->
+        <span><input type="checkbox" id="all"><label for="all"></label>所有</span>
+        <span><input type="checkbox" id="1"><label for="1"></label>物理+化学+生物</span>
+        <span><input type="checkbox" id="2"><label for="2"></label>物理+化学+历史</span>
+        <span><input type="checkbox" id="3"><label for="3"></label>物理+化学+政治</span>
+        <span><input type="checkbox" id="4"><label for="4"></label>物理+化学+地理</span>
+        <span><input type="checkbox" id="5"><label for="5"></label>物理+生物+历史</span>
+        <span><input type="checkbox" id="6"><label for="6"></label>物理+生物+政治</span>
+        <span><input type="checkbox" id="7"><label for="7"></label>物理+生物+地理</span>
+        <span><input type="checkbox" id="8"><label for="8"></label>物理+历史+政治</span>
+        <span><input type="checkbox" id="9"><label for="9"></label>物理+历史+地理</span>
+        <span><input type="checkbox" id="10"><label for="10"></label>物理+政治+地理</span>
+        <span><input type="checkbox" id="11"><label for="11"></label>化学+生物+历史</span>
+        <span><input type="checkbox" id="12"><label for="12"></label>化学+生物+政治</span>
+        <span><input type="checkbox" id="13"><label for="13"></label>化学+生物+地理</span>
+        <span><input type="checkbox" id="14"><label for="14"></label>化学+历史+政治</span>
+        <span><input type="checkbox" id="15"><label for="15"></label>化学+历史+地理</span>
+        <span><input type="checkbox" id="16"><label for="16"></label>化学+政治+地理</span>
+        <span><input type="checkbox" id="17"><label for="17"></label>生物+历史+政治</span>
+        <span><input type="checkbox" id="18"><label for="18"></label>生物+历史+地理</span>
+        <span><input type="checkbox" id="19"><label for="19"></label>生物+政治+地理</span>
+        <span><input type="checkbox" id="20"><label for="20"></label>历史+政治+地理</span>
+        <div class="qd">确定</div>
+    </div>
+</div>
+<div class="conbox">
+    <div class="con clearfix">
+        <div class="chart">
+            <div class="til">历年高考成绩</div>
+            <div id="chartA"></div>
+        </div>
+        <div class="desc">
+            <div class="til">专家解读</div>
+            <div class="con">
+                <p>选择物理和其他两门科目的本科录取率逐步上升；</p>
+                <p>物+化+地、物+生+地、化学+生物+史\政平均成绩持续上升，物+生+史\政、物+史+政\地、化+史+地、生+史+政平均成绩持续下滑；</p>
+                <p>化+地+生/政、生+地+史/政人数上涨，物+史+生/地人数持续减少；</p>
+                <p>综合来看，生+政+物/史/地的选科方式无论是本科率、一本率还是重本率都持续提升，化+史+政/地、化+生+政情况也较为乐观；政+地+物/史的选科方式呈下滑趋势；</p>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="bbs_footer">
+    <div class="bbs_footer_m">
+        <div class="bbs_footer_l">
+            <span class="bbs_footer_t">合作伙伴</span>
+            <ul>
+                <li><a href="#">科大讯飞</a></li>
+                <li><a href="#">北京师范大学</a></li>
+                <li><a href="#">基础教育大数据国家工程实验室</a></li>
+                <li><a href="#">洛阳市政府</a></li>
+                <li><a href="#">MIT</a></li>
+                <li><a href="#">Dublin City University</a></li>
+                <li><a href="#">浙江金华市政府</a></li>
+                <li><a href="#">University of Piraeus</a></li>
+                <li><a href="#">OUC (Barcelona)</a></li>
+                <li><a href="#">贵州清镇市</a></li>
+                <li><a href="#">Athabasca University </a></li>
+                <li><a href="#">UNESCO on e-learning & OER </a></li>
+                <li><a href="#">成都双流区</a></li>
+                <li><a href="#">Harvard University </a></li>
+                <li><a href="#">University of London</a></li>
+
+            </ul>
+        </div>
+        <div class="bbs_footer_r">
+            <a class="bbs_f_about" href="#">关于我们</a>
+            <span class="bbs_f_contact">联系方式</span>
+            <ul>
+                <li><span>邮政编码：100875</span></li>
+                <li><span>地址：学院南路12号京师科技大厦A座3楼</span></li>
+                <li><span>邮箱：icome@bnu.edu.cn</span></li>
+                <li><span>Copyright © 基础教育大数据应用研究院</span></li>
+                <li>
+                    <a class="a1" href="#"></a>
+                    <a class="a2" href="#"></a>
+                    <a class="a3" href="#"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

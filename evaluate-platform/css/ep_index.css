@@ -1,0 +1,141 @@
+body{
+    font-size: 16px!important;
+    color: #333;
+    background: #fff!important;
+}
+.banner{
+    width: 100%;
+    display: block;
+}
+.welcome{
+    width: 1140px;
+    margin: 0 auto;
+    height: 500px;
+    background: url("../images/worldmap.png") no-repeat;
+    background-size: 1303px 482px;
+}
+.wTitle{
+    margin: 0 auto;
+    padding: 93px 0 67px;
+    display: block;
+}
+.paragraph{
+    line-height: 30px;
+    text-indent: 35px;
+    padding-top: 150px;
+}
+.source{
+    height: 500px;
+    width: 100%;
+    background: #f1f6fb url("../images/building.png") no-repeat;
+    background-size: 100% 100%;
+}
+.mid{
+    width: 1140px;
+    margin: 0 auto;
+    position: relative;
+}
+.building{
+    width: 555px;
+    float: left;
+    display: block;
+    margin-top: 64px;
+}
+.source .logo{
+    float: left;
+    display: block;
+    width: calc(595%/1140);
+
+}
+.source .right{
+    position: absolute;
+    left: 500px;
+    margin-top: 100px;
+}
+.source .right .rTitle span{
+    font-size: 24px;
+    font-weight: 600;
+}
+.source .right ul.circle{
+    background: url("../images/schoollogo.png") no-repeat;
+    background-size: 100% 100%;
+    width: 1054px;
+    height: 189px;
+    margin: 45px 0 0;
+}
+.source .right ul li:first-child{
+    margin-bottom: 35px;
+    line-height: 16px;
+    padding-left: 200px;
+    padding-top: 30px;
+}
+.source .right ul li:nth-child(2){
+    line-height: 16px;
+    margin-bottom: 35px;
+    padding-left: 210px;
+}
+.source .right ul li:last-child{
+    line-height: 16px;
+    padding-left: 200px;
+}
+.keyConcept{
+    height: 500px;
+}
+.keyConcept .kcTitle{
+    margin: 86px auto 20px;
+}
+.keyConcept ul{
+    background: #f8fafb;
+    padding: 40px 30px 30px 30px;
+    box-sizing: border-box;
+    height: 313px;
+}
+.keyConcept .cc{
+    width: 140px;
+}
+.keyConcept .ccl{
+    width: 200px!important;
+}
+.keyConcept ul li{
+    width: 190px;
+    height: 160px;
+    border-right: solid 1px #e0dddb;
+    float: left;
+    display: block;
+    padding-left: 30px;
+}
+.keyConcept ul li:first-child{
+    width: 190px!important;
+    padding: 0!important;
+}
+.keyConcept ul li:last-child{
+    border: none!important;
+}
+.keyConcept span{
+    display: block;
+    width: 55px;
+    height: 25px;
+    color: #fff;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    margin: 0 0 30px;
+}
+.keyConcept .red{
+    background: #ff6a4d;
+}
+.keyConcept .orange{
+    background: #f9a835;
+}
+.keyConcept .kcgreen{
+    background: #b2d643;
+}
+.keyConcept .blue{
+    background: #56cdce;
+}
+.keyConcept .purple{
+    background: #868be4;
+    width: 70px;
+}

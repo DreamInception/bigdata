@@ -1,0 +1,80 @@
+@import "compass";
+@import "normalize";
+@import "config";
+*{
+  margin:0;
+  padding:0;
+  list-style: none;
+  @include box-sizing(border-box);
+}
+a{
+  text-decoration: none;
+}
+body{
+  min-width:1140px;
+  font-size: 14px;
+  font-family:"Microsoft YaHei";
+  color:#3d3d3c;
+  background: #eee;
+}
+.clearfix{
+  @include pie-clearfix();
+}
+//头部样式
+header{
+  width:100%;
+  height:60px;
+  line-height:60px;
+  background: $mainColor;
+ div{
+   width:1140px;
+   margin:0 auto;
+   ul{
+     float:left;
+     li{
+       float:left;
+       margin-right:30px;
+       a{
+         font-size:18px;
+         color:$whiteColor;
+         display: block;
+         padding:0 15px;
+         &:hover,&.selected{
+           background: $hoverBgColor;
+         }
+       }
+     }
+   }
+    &>a{
+      float: left;
+      display: block;
+      width:140px;
+      height:60px;
+      margin-right: 30px;
+      background: url("../images/logo.png") no-repeat left center;
+    }
+   div{
+     width:auto;
+     float:right;
+     font-size: 18px;
+     span{
+       line-height:60px;
+       float: left;
+       color: $whiteColor;
+       margin-right:10px;
+     }
+     div{
+       width:40px;
+       height:40px;
+       float:left;
+       overflow: hidden;
+       @include border-radius(50%);
+       margin-top:10px;
+       img{
+         width:100%;
+         height:100%;
+       }
+     }
+   }
+ }
+}

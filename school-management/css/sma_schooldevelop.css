@@ -1,0 +1,214 @@
+*{
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+.selectB{
+    margin:0;
+    position: relative;
+    height:100px;
+}
+.conbox{
+    width:1140px;
+    margin:20px auto 20px;
+}
+.conboxt{
+    width:1140px;
+    margin:80px auto 20px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background:#fff;
+    padding:20px;
+}
+.chart,.desc{
+    width:805px;
+    height:430px;
+    /*border:1px solid #bcb8b3;*/
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background:#fff;
+    float:left;
+    padding:20px 20px 0;
+}
+.desc{
+    width:314px;
+    height:430px;
+    margin-left:20px;
+}
+.til{
+    border-left: 2px solid #3D3730; padding-left: 10px; font-size: 16px; font-weight: bold; color: #565554; margin-bottom: 20px;
+}
+#chartA{
+    width:100%;
+    height:360px;
+}
+.con p{
+    text-indent: 2em;
+    line-height:24px;
+    margin-bottom:10px
+}
+
+.selectB input{
+    display:none;
+}
+.selectB label{
+    display: inline-block;
+    width:15px;
+    height:15px;
+    background:url("../images/color.png") no-repeat 0 -25px;
+    margin:3px 5px 0 0;
+    float:left;
+    cursor: pointer;
+}
+.selectB span:nth-child(1) label{
+    background:url("../images/qxcolor.png") no-repeat 0 -25px;
+}
+.selectB span:nth-child(1) input:checked~label{
+    background:url("../images/qxcolor.png") no-repeat 0 0;
+}
+.selectB span:nth-child(2) label{
+    background-position:0 -25px;
+}
+.selectB span:nth-child(3) label{
+     background-position:-15px -25px;
+ }
+.selectB span:nth-child(4) label{
+    background-position:-30px -25px;
+}
+.selectB span:nth-child(5) label{
+    background-position:-45px -25px;
+}
+.selectB span:nth-child(6) label{
+    background-position:-60px -25px;
+}
+.selectB span:nth-child(7) label{
+    background-position:-75px -25px;
+}
+.selectB span:nth-child(8) label{
+    background-position:-90px -25px;
+}
+.selectB span:nth-child(9) label{
+    background-position:-105px -25px;
+}
+.selectB span:nth-child(10) label{
+    background-position:-120px -25px;
+}
+.selectB span:nth-child(11) label{
+    background-position:-135px -25px;
+}
+.selectB span:nth-child(12) label{
+    background-position:-150px -25px;
+}
+.selectB span:nth-child(13) label{
+    background-position:-165px -25px;
+}
+.selectB span:nth-child(14) label{
+    background-position:-180px -25px;
+}
+.selectB span:nth-child(15) label{
+    background-position:-195px -25px;
+}
+.selectB span:nth-child(16) label{
+    background-position:-210px -25px;
+}
+.selectB span:nth-child(17) label{
+    background-position:-225px -25px;
+}
+.selectB span:nth-child(18) label{
+    background-position:-240px -25px;
+}
+.selectB span:nth-child(19) label{
+    background-position:-255px -25px;
+}
+.selectB span:nth-child(20) label{
+    background-position:-270px -25px;
+}
+.selectB span:nth-child(21) label{
+    background-position:-285px -25px;
+}
+.selectB span:nth-child(2) input:checked~label{
+    background-position:0 0;
+}
+.selectB span:nth-child(3) input:checked~label{
+    background-position:-15px 0;
+}
+.selectB span:nth-child(4) input:checked~label{
+    background-position:-30px 0;
+}
+.selectB span:nth-child(5) input:checked~label{
+    background-position:-45px 0;
+}
+.selectB span:nth-child(6) input:checked~label{
+    background-position:-60px 0;
+}
+.selectB span:nth-child(7) input:checked~label{
+    background-position:-75px 0;
+}
+.selectB span:nth-child(8) input:checked~label{
+    background-position:-90px 0;
+}
+.selectB span:nth-child(9) input:checked~label{
+    background-position:-105px 0;
+}
+.selectB span:nth-child(10) input:checked~label{
+    background-position:-120px 0;
+}
+.selectB span:nth-child(11) input:checked~label{
+    background-position:-135px 0;
+}
+.selectB span:nth-child(12) input:checked~label{
+    background-position:-150px 0;
+}
+.selectB span:nth-child(13) input:checked~label{
+    background-position:-165px 0;
+}
+.selectB span:nth-child(14) input:checked~label{
+    background-position:-180px 0;
+}
+.selectB span:nth-child(15) input:checked~label{
+    background-position:-195px 0;
+}
+.selectB span:nth-child(16) input:checked~label{
+    background-position:-210px 0;
+}
+.selectB span:nth-child(17) input:checked~label{
+    background-position:-225px 0;
+}
+.selectB span:nth-child(18) input:checked~label{
+    background-position:-240px 0;
+}
+.selectB span:nth-child(19) input:checked~label{
+    background-position:-255px 0;
+}
+.selectB span:nth-child(20) input:checked~label{
+    background-position:-270px 0;
+}
+.selectB span:nth-child(21) input:checked~label{
+    background-position:-285px 0;
+}
+.selectB span{
+    line-height:21px;
+    float:left;
+    margin-right:25px;
+}
+.selectB span:nth-child(1){
+    display: block;
+    height:80px;
+}
+.selectB span:nth-child(8),.selectB span:nth-child(15){
+    margin-right:0;
+}
+.qd{
+    position: absolute;
+    bottom:0;
+    left:50%;
+    margin-left:-34px;
+    margin-top:10px;
+    padding:5px 20px;
+    background:#164370;
+    color:#fff;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+}

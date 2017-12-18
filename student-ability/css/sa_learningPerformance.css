@@ -1,0 +1,79 @@
+/* Dropdown control */
+.selectBox-dropdown { max-width: 120px; max-height: 30px; position: relative; border: solid 1px #d2d2d2; text-decoration: none; text-align: left; /*color: "";*/ outline: none; vertical-align: middle; background: #fff; display: inline-block; cursor: default; }
+
+.selectBox-dropdown:focus { border-color: #aaa; }
+
+.selectBox-dropdown:focus .selectBox-arrow { border-color: #aaa; background-image: url(../images/order-up.png); }
+
+.selectBox-dropdown.selectBox-menuShowing { -moz-border-radius-bottomleft: 0; -moz-border-radius-bottomright: 0; -webkit-border-bottom-left-radius: 0; -webkit-border-bottom-right-radius: 0; border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
+
+.selectBox-dropdown .selectBox-label { padding: 5px 15px; display: inline-block; white-space: nowrap; overflow: hidden;
+    width: 120px!important;}
+
+.selectBox-dropdown .selectBox-arrow { position: absolute; top: 0; right: 0; width: 8px; height: 100%; padding: 0 18px; background: #fff url(../images/order-down.png) 50% 50% no-repeat; }
+
+/* Dropdown menu */
+.selectBox-dropdown-menu { position: absolute; z-index: 999; max-height: 200px; min-height: 1em; border: solid 1px #aaa; background: #FFF; -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); overflow: auto; -webkit-overflow-scrolling: touch; }
+
+/* Inline control */
+.selectBox-inline { min-width: 150px; outline: none; border: solid 1px #BBB; background: #FFF; display: inline-block; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; overflow: auto; }
+
+.selectBox-inline:focus { border-color: #666; }
+
+/* Options */
+.selectBox-options, .selectBox-options li, .selectBox-options li a { color: #666; list-style: none; display: block; cursor: default; padding: 0; margin: 0; }
+
+.selectBox-options li a { line-height: 1.5; padding: 3px 15px; margin: 3px 1px; white-space: nowrap; overflow: hidden; background: 6px center no-repeat; }
+
+.selectBox-options li.selectBox-hover a { background-color: #EEE; }
+
+.selectBox-options li.selectBox-disabled a { color: #888; background-color: transparent; }
+
+.selectBox-options li.selectBox-selected a { background-color: #EEE; }
+
+.selectBox-options .selectBox-optgroup { color: #666; background: #EEE; font-weight: bold; line-height: 1.5; padding: 0 .3em; white-space: nowrap; }
+
+/* Disabled state */
+.selectBox.selectBox-disabled { color: #888 !important; }
+
+.selectBox-dropdown.selectBox-disabled .selectBox-arrow { opacity: .5; border-color: #666; }
+
+.selectBox-inline.selectBox-disabled { color: #888 !important; }
+
+.selectBox-inline.selectBox-disabled .selectBox-options a { background-color: transparent !important; }
+
+div.contbox { width: 1140px; margin: 0 auto; padding: 40px 0 40px; }
+div.contbox ul.tab { margin-bottom: 20px; }
+div.contbox ul.tab li { float: left; width: 189px; height: 48px; line-height: 48px; text-align: center; border: 1px solid #cacaca; font-size: 16px; cursor: pointer; background: #fff; }
+div.contbox ul.tab li:nth-child(2) { margin-left: -1px; }
+div.contbox ul.tab li.select { color: #fff; background: #3D3730; border-color: #3D3730; font-weight: bold; }
+div.contbox ul.tabcont { /* position: relative;*/ width: 100%; }
+div.contbox ul.tabcont li { /* position: absolute; top:0; left:0;*/ width: 100%; }
+div.contbox ul.tabcont li .chartbox1, div.contbox ul.tabcont li .chartbox2 { width: 100%; height: 460px; border: 1px solid #cacaca; margin-bottom: 20px; -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; background: #fff; padding: 20px 20px 0; }
+div.contbox ul.tabcont li .chartbox1 .til, div.contbox ul.tabcont li .chartbox2 .til { border-left: 2px solid #3D3730; padding-left: 10px; float: left; font-size: 16px; font-weight: bold; color: #565554; }
+div.contbox ul.tabcont li .chartbox1 .selectB, div.contbox ul.tabcont li .chartbox2 .selectB { float: right; }
+div.contbox ul.tabcont li .chartbox1 #chartA, div.contbox ul.tabcont li .chartbox1 #chartD, div.contbox ul.tabcont li .chartbox2 #chartA, div.contbox ul.tabcont li .chartbox2 #chartD { width: 100%; height: 350px; float: left; margin-top: 20px; }
+div.contbox ul.tabcont li .chartbox1 .xb, div.contbox ul.tabcont li .chartbox2 .xb { width: 100%; float: left; }
+div.contbox ul.tabcont li .chartbox1 .xb #chartB, div.contbox ul.tabcont li .chartbox1 .xb #chartC, div.contbox ul.tabcont li .chartbox1 .xb #chartE, div.contbox ul.tabcont li .chartbox1 .xb #chartF, div.contbox ul.tabcont li .chartbox2 .xb #chartB, div.contbox ul.tabcont li .chartbox2 .xb #chartC, div.contbox ul.tabcont li .chartbox2 .xb #chartE, div.contbox ul.tabcont li .chartbox2 .xb #chartF { width: 549px; float: left; height: 350px; }
+div.contbox ul.tabcont li .chartbox1.chartbox2, div.contbox ul.tabcont li .chartbox2.chartbox2 { height: 444px; }
+div.contbox ul.tabcont li .chartbox1.chartbox1H, div.contbox ul.tabcont li .chartbox2.chartbox1H { height: 480px; }
+div.contbox .recom, div.contbox .suggest { margin-top: 40px; padding:20px;background:#fff;-webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;border: 1px solid #cacaca;}
+div.contbox .recom .til, div.contbox .suggest .til { border-left: 2px solid #3D3730; padding-left: 10px; font-size: 16px; font-weight: bold; color: #565554; margin-bottom: 20px; }
+div.contbox .recom{
+    text-align: center;}
+div.contbox .recom .til{
+    text-align: left;}
+
+#start1,#end1,#start2,#end2{
+    width:130px;
+    height:30px;
+    line-height:30px;
+    padding:0 15px 0 5px;
+    border: solid 1px #d2d2d2;
+    background: url("../images/order-down.png") no-repeat 105px center;
+    outline: none;
+}
+.suggestcont p{
+    margin-bottom:15px;
+    color:#565554
+}

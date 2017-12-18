@@ -1,0 +1,57 @@
+a,b,body,canvas,dd,div,dl,dt,em,form,h1,h2,h3,h4,h5,h6,html,img,input,label,li,ol,p,q,span,ul,select{margin:0;padding:0;border:0;outline:0;font-size-adjust:none;-webkit-text-size-adjust:100%!important;-webkit-touch-callout:none;font-family:"Microsoft YaHei",微软雅黑;font-size: 16px;color: #3d3d3c;}
+*{-webkit-tap-highlight-color:transparent;}
+body,html{background:#eeeeee;font-size:16px;padding:0;margin:0; font-family: "微软雅黑"; width: 100%; overflow-x: hidden; overflow-y:auto ;}
+article,aside,dialog,header,section,footer,nav,figure,menu{display:block}
+input{-webkit-user-select:auto;outline:0;}
+::-webkit-input-placeholder{color:#999;}
+ol,li,ul{list-style:none;}
+a{text-decoration:none;}
+em,i{font-style:normal;}
+
+
+
+
+
+.sm_rm_container{ margin-top: 60px;background: #eeeeee; position: relative;}
+.sm_rm_resource,.sm_rm_course{ overflow: hidden; padding-top: 20px;}
+.sm_rm_load{ width: 1140px; padding-bottom: 30px; margin: 0px auto 20px; border-radius: 10px; background: #ffffff;}
+.sm_rm_title{ padding:18px 20px 0 ; }
+.sm_rm_title span{border-left: 2px solid #164370; padding-left: 8px; color:#565554; font-size: 16px; font-weight: bold;}
+.sm_rm_table{ padding-left: 45px; width: 600px; height: 445px; margin: 20px auto; position: relative;}
+.sm_rm_subject{ position: absolute; top: 0; left: 0; bottom: 0; width: 45px; height: 100%; background: url(../images/sm_rm_icon1.png) no-repeat bottom right;}
+.sm_rm_subject span{ display: block; height: 49px; line-height: 49px;}
+.sm_rm_ul{ clear: both; padding-bottom: ;}
+.sm_rm_ul li{ height: 48px; border-bottom: 1px solid #68acd1;}
+.sm_rm_ul li span{position: relative; display: block; float: left; width: 74px; height: 48px; line-height: 48px; border-right: 1px solid #68acd1; text-align: center; color: #000000;}
+.sm_rm_ul li span.c6{ background: #9bd1e9;}
+.sm_rm_ul li span.c7{ background: #7fb2d5;}
+.sm_rm_ul li span.c8{ background: #6d9ec9;}
+.sm_rm_ul li span.c9{ background: #6899c5;}
+.sm_rm_ul li span.c10{ background: #6292c1;}
+.sm_rm_ul li span.c11{ background: #5887ba;}
+.sm_rm_ul li span.c12{ background: #5483b7;}
+.sm_rm_ul li span.c13{ background: #507eb4;}
+.sm_rm_ul li span.c14{ background: #4d7bb2;}
+.sm_rm_ul li span.c15{ background: #4b79b1;}
+.sm_rm_ul li span.c16{ background: #4471ac;}
+.sm_rm_ul li span i{ display: none; position: absolute; top: -75px; left: 55px;  width:150px; padding:10px 8px; background: #3d3730; border-radius: 5px; z-index: 3;}
+.sm_rm_ul li span i em{ display: block; padding-left: 10px; font-size: 16px; line-height: 1.5; text-align: left; color: #ffffff; background: url(../images/sm_rm_icon4.png) no-repeat left center;}
+.sm_rm_ul li span.open:hover i{ display: block;}
+.sm_rm_ul li span.open{ cursor: pointer;}
+.sm_rm_ul li:last-child{ height: 7px; border: none; border-top: 1px solid #000000;}
+.sm_rm_ul li b{ float: left; display: block ; width: 74px; height: 7px; border-right: 1px solid #000000;}
+.sm_rm_color{position: relative; width: 191px; height: 38px; margin: 40px auto 0; background: url(../images/sm_rm_icon5.png) no-repeat;}
+.sm_rm_color em{ position: absolute; top: -2px; left: -15px;}
+.sm_rm_color em:last-child{ left: 193px;}
+.sm_rm_analysis{ height: 285px; background: #dcdcdd;}
+.sm_rm_aly{ width: 1140px; margin: 0 auto; padding-top: 35px;}
+.sm_rm_aly p{ font-size: 14px; color: #333333; line-height: 2; }
+.sm_rm_aly h3{ font-weight: bold; color: #3d3d3c; padding-bottom: 20px;}
+.sm_rm_back{ width: 1140px; margin: 0 auto; padding-bottom: 20px; overflow: hidden;}
+.sm_rm_back a{ display: block; float: left; padding: 3px 0 3px 35px; background: url(../images/sm_rm_icon6.png) no-repeat top left; font-size: 20px;}
+.sm_rm_explain{ width: 1010px; margin: 0 auto; padding: 22px 65px; background: #d6e3f1; border-radius: 10px; margin-bottom: 20px; text-indent: 30px; line-height: 1.5;}
+.sm_rm_load table{ width: 810px; margin: 0 auto; background: #bcb8b3;border:1px solid #bcb8b3;}
+.sm_rm_load table th,.sm_rm_load table td{ width: 134px; text-align: center; font-size: 14px; color: #565554; padding: 10px 0; border-right:1px solid #bcb8b3;border-bottom:1px solid #bcb8b3;}
+.sm_rm_load table th{ background: #cac5be;}
+.sm_rm_load table td{ background: #f3f2f1; text-align: center;}
+.sm_rm_tabt{ padding-top: 30px; padding-bottom: 20px; text-align: center; font-size: 16px; color: #3d3d3c;}

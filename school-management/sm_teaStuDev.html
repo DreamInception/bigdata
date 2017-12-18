@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/sm_teaStuDev.css">
+    <link rel="stylesheet" href="css/jquery.lineProgressbar.css">
+    <script src="js/lib/echarts.js"></script>
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/public.js"></script>
+    <script src="js/lib/jquery.selectBox.min.js"></script>
+    <script src="js/lib/jquery.lineProgressbar.js"></script>
+    <script src="js/sm_teaStuDev.js"></script>
+</head>
+<body>
+<section class="bbs_headr">
+    <div class="bbs_top_m">
+        <a href="../index.html" class="bbs_logo"></a>
+        <ul class="bbs_h_nav">
+            <li>
+                <a href="sm_index.html">首页</a>
+            </li>
+            <li>
+                <a href="sma_schooldevelop.html">学校发展</a>
+                <div class="sm_menu">
+                    <a href="#">综合校情</a>
+                    <a href="#">高考情况</a>
+                    <a href="#">发展目标</a>
+                </div>
+            </li>
+            <li class="cur">
+                <a class="cur" href="sm_teaStuDev.html">师生发展</a>
+                <div class="sm_menu">
+                    <a class="title" href="#">学生发展</a>
+                    <a href="#">学生概况</a>
+                    <a href="#">学生行为</a>
+                    <a href="#">学生成绩</a>
+                    <a class="title" href="#">教师发展</a>
+                    <a href="#">教师概况</a>
+                    <a href="#">教学表现</a>
+                    <a href="#">科研表现</a>
+                    <a href="#">教研表现</a>
+                    <a href="#">学生管理</a>
+                </div>
+            </li>
+            <li>
+                <a href="#">身心健康</a>
+                <div class="sm_menu">
+                    <a href="#">体质健康</a>
+                    <a href="#">心理健康</a>
+                </div>
+            </li>
+            <li>
+                <a href="#">平安校园</a>
+                <div class="sm_menu">
+                    <a href="#">校园人流</a>
+                    <a href="#">突发事件</a>
+                    <a href="#">学生考勤</a>
+                    <a href="#">安全教育</a>
+                </div>
+            </li>
+            <li>
+                <a href="sm_resource_monitoring.html">资源监测评价</a>
+                <div class="sm_menu">
+                    <a href="#">资源配置监测</a>
+                    <a href="#">资源配置评价</a>
+                </div>
+            </li>
+            <li>
+                <a href="sma_decisionsupport.html">学校决策支持</a>
+                <div class="sm_menu">
+                    <a href="#">高考趋势预测</a>
+                    <a href="#">教师需求预测</a>
+                    <a href="#">学生选科预测</a>
+                </div>
+            </li>
+        </ul>
+        <div class="bbs_top_r">
+            <div class="bbs_top_per">
+                <a href="../bbs/bbs_personal.html">
+                    <span>郑老师,欢迎您！</span>
+                    <img src="images/avatar.png">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<aritcle id="app">
+    <section class="section section1">
+        <div class="top clearfix">
+            <div class="title f-fl">
+                <span>班级历次考试成绩</span>
+            </div>
+            <!--<div class="locate f-fr">-->
+            <select name="standard-dropdown" class="standard-dropdown f-fr first-select" id="selectbox1">
+                <!--<option value="0" selected="selected">年级</option>-->
+                <option value="1">高一</option>
+                <option value="2">高二</option>
+                <option value="3" selected="selected">高三</option>
+                <!--<option :value="i.value" v-for="i in kind">{{i.label}}</option>-->
+            </select>
+            <!--</div>-->
+        </div>
+        <ul class="chartsFirst clearfix">
+            <div class="left f-fl">
+                <div class="clearfix">
+                    <ol class="names firstClass f-fl">
+                        <li>班级</li>
+                        <li data-class="1">高三一班</li>
+                        <li data-class="2">高三二班</li>
+                        <li data-class="3">高三三班</li>
+                        <li data-class="4">高三四班</li>
+                        <li data-class="5">高三五班</li>
+                        <li data-class="6">高三六班</li>
+                        <li data-class="7">高三七班</li>
+                        <li data-class="8">高三八班</li>
+                        <li data-class="9">高三九班</li>
+                        <li data-class="10">高三十班</li>
+                    </ol>
+
+                    <ol class="values f-fl">
+                        <li class="clearfix">
+                            <div id="progressbar1" class="progress color1" data-class="1"></div>
+                            <div class="percent">516.00</div>
+                        </li>
+                        <li>
+                            <div id="progressbar2" class="progress color2" data-class="2"></div>
+                            <div class="percent">508.00</div>
+                        </li>
+                        <li>
+                            <div id="progressbar3" class="progress color3" data-class="3"></div>
+                            <div class="percent">520.38
+                            </div>
+                        </li>
+                        <li>
+                            <div id="progressbar4" class="progress color4" data-class="4"></div>
+                            <div class="percent">517.23
+                            </div>
+                        </li>
+                        <li>
+                            <div id="progressbar5" class="progress color5" data-class="5"></div>
+                            <div class="percent">512.69
+                            </div>
+                        </li>
+                        <li>
+                            <div id="progressbar6" class="progress color6" data-class="6"></div>
+                            <div class="percent">516.38
+                            </div>
+                        </li>
+                        <li>
+                            <div id="progressbar7" class="progress color7" data-class="7"></div>
+                            <div class="percent">518.85
+                            </div>
+                        </li>
+                        <li>
+                            <div id="progressbar8" class="progress color8" data-class="8"></div>
+                            <div class="percent">511.46
+                            </div>
+                        </li>
+                        <li>
+                            <div id="progressbar9" class="progress color9" data-class="9"></div>
+                            <div class="percent">512.15
+                            </div>
+                        </li>
+                        <li>
+                            <div id="progressbar10" class="progress color10" data-class="10"></div>
+                            <div class="percent">515.77
+                            </div>
+                        </li>
+                        <li class="hline"></li>
+                        <li class="xAname">平均成绩</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="right f-fl">
+                <div class="clearfix">
+                    <ol class="names f-fl">
+                        <li>班级</li>
+                        <li>高三一班</li>
+                        <li>高三二班</li>
+                        <li>高三三班</li>
+                        <li>高三四班</li>
+                        <li>高三五班</li>
+                        <li>高三六班</li>
+                        <li>高三七班</li>
+                        <li>高三八班</li>
+                        <li>高三九班</li>
+                        <li>高三十班</li>
+                    </ol>
+                    <ol class="matrix f-fl">
+                        <li class="row clearfix">
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd medium growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd medium growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd medium growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd medium growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd medium growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd high growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd high growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd medium growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+
+                        </li>
+                        <li class="row clearfix">
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd medium growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd medium growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd medium growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd medium growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd medium growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+
+
+                        </li>
+                        <li class="row clearfix">
+                            <span class="odd medium growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd high growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd medium growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd high growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd high growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd medium growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd medium growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd medium growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd high growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd medium growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd medium growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+
+                        </li>
+                        <li class="row clearfix">
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd medium growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd medium growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd medium growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd high growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd medium growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd medium growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd high growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+
+                        </li>
+                        <li class="row clearfix">
+                            <span class="odd medium growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd medium growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd medium growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd medium growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+
+                        </li>
+                        <li class="row clearfix">
+                            <span class="odd medium growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd medium growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd medium growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd medium growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd medium growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd high growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd high growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd medium growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+
+                        </li>
+                        <li class="row clearfix">
+                            <span class="odd medium growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd medium growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd high growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd medium growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd medium growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd medium growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd medium growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd medium growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+
+                        </li>
+                        <li class="row clearfix">
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd medium growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd medium growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd medium growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd medium growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+
+                        </li>
+                        <li class="row clearfix">
+                            <span class="odd high growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd medium growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd medium growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd medium growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd medium growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+
+                        </li>
+                        <li class="row clearfix">
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd medium growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd high growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd medium growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd medium growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd medium growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd medium growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd low growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+                            <span class="odd medium growSize"><i><em class="subTitle">考试成绩：</em><em></em></i></span><span class="even"></span>
+
+                        </li>
+                        <li class="xBname">历次考试</li>
+                    </ol>
+                </div>
+                <div class="matchTxt">
+                    <span class="low point"></span><span class="txt">未达到年级平均分</span>
+                    <span class="medium point"></span><span class="txt">达到年级平均分</span>
+                    <span class="high point"></span><span class="txt">某次考试中平均分最高</span>
+                </div>
+            </div>
+        </ul>
+    </section>
+    <section class="section section2">
+        <div class="top clearfix">
+            <div class="title f-fl">
+                <span>成绩分档图</span>
+            </div>
+        </div>
+        <div class="charts2" id="charts2"></div>
+
+    </section>
+    <section class="section section3">
+        <div class="top clearfix">
+            <div class="title f-fl">
+                <span>年级和班级平均分</span>
+            </div>
+            <!--<div class="f-fr">-->
+                <!--<select name="standard-dropdown" class="standard-dropdown first-select" id="selectbox3">-->
+                    <!--&lt;!&ndash;<option value="" selected="selected">年级</option>&ndash;&gt;-->
+                    <!--<option value="9" selected="selected">高三</option>-->
+                    <!--&lt;!&ndash;<option :value="i.value" v-for="i in kind">{{i.label}}</option>&ndash;&gt;-->
+                <!--</select>-->
+                <!--<span>至</span>-->
+                <!--<select name="standard-dropdown" class="standard-dropdown first-select" id="selectbox4">-->
+                    <!--&lt;!&ndash;<option value="" selected="selected">班级</option>&ndash;&gt;-->
+                    <!--<option value="1" selected="selected">一班</option>-->
+                    <!--<option value="2">二班</option>-->
+                    <!--<option value="3">三班</option>-->
+                    <!--<option value="4">四班</option>-->
+                    <!--<option value="5">五班</option>-->
+                    <!--<option value="6">六班</option>-->
+                    <!--<option value="7">七班</option>-->
+                    <!--<option value="8">八班</option>-->
+                    <!--<option value="9">九班</option>-->
+                    <!--<option value="10">十班</option>-->
+                    <!--&lt;!&ndash;<option :value="i.value" v-for="i in kind">{{i.label}}</option>&ndash;&gt;-->
+                <!--</select>-->
+            <!--</div>-->
+        </div>
+        <div class="charts3" id="charts3"></div>
+    </section>
+    <section class="lastSection">
+        <div class="mid">
+            <h3>趋势分析</h3>
+            <ul>
+                <li>高三3班成绩基本保持稳定，在整个学年的13次考试中有11次超过年级平均分，4次考试中班级平均分位居年级第一，但在近4次考试中成绩出现下滑趋势，需要引起重视和关注；</li>
+                <li>高三1班、高三2班、高三8班、高三9班和高三10班第二学期的成绩明显优于第一学期，表现出巨大进步；</li>
+                <li>高三5班、6班和7班在第二学期成绩明显退步且波动较大，需要引起高度关注并采取相关措施；</li>
+                <li>高三4班成绩较为稳定，有提高的潜力和空间。</li>
+            </ul>
+        </div>
+    </section>
+    <footer class="bbs_footer">
+        <div class="bbs_footer_m">
+            <div class="bbs_footer_l">
+                <span class="bbs_footer_t">合作伙伴</span>
+                <ul>
+                    <li><a href="#">科大讯飞</a></li>
+                    <li><a href="#">北京师范大学</a></li>
+                    <li><a href="#">基础教育大数据国家工程实验室</a></li>
+                    <li><a href="#">洛阳市政府</a></li>
+                    <li><a href="#">MIT</a></li>
+                    <li><a href="#">Dublin City University</a></li>
+                    <li><a href="#">浙江金华市政府</a></li>
+                    <li><a href="#">University of Piraeus</a></li>
+                    <li><a href="#">OUC (Barcelona)</a></li>
+                    <li><a href="#">贵州清镇市</a></li>
+                    <li><a href="#">Athabasca University </a></li>
+                    <li><a href="#">UNESCO on e-learning & OER </a></li>
+                    <li><a href="#">成都双流区</a></li>
+                    <li><a href="#">Harvard University </a></li>
+                    <li><a href="#">University of London</a></li>
+
+                </ul>
+            </div>
+            <div class="bbs_footer_r">
+                <a class="bbs_f_about" href="#">关于我们</a>
+                <span class="bbs_f_contact">联系方式</span>
+                <ul>
+                    <li><span>邮政编码：100875</span></li>
+                    <li><span>地址：学院南路12号京师科技大厦A座3楼</span></li>
+                    <li><span>邮箱：icome@bnu.edu.cn</span></li>
+                    <li><span>Copyright © 基础教育大数据应用研究院</span></li>
+                    <li>
+                        <a class="a1" href="#"></a>
+                        <a class="a2" href="#"></a>
+                        <a class="a3" href="#"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</aritcle>
+</body>
+</html>

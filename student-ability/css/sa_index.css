@@ -1,0 +1,26 @@
+article .indexbg { width: 100%; min-width: 1140px; height: 708px; background: url("../images/bgt.png") no-repeat center -60px;}
+article .outbox { padding-bottom: 71px; }
+article .outbox .inbox { width: 1140px; margin: 0 auto; padding-top: 40px; border-bottom: 1px solid #bcb8b3; }
+article .outbox .inbox p { border-left: solid 6px #164370;padding-left:10px; }
+article .outbox .inbox p:nth-child(1) { font-size: 30px; }
+article .outbox .inbox p:nth-child(2) { font-size: 12px; margin-bottom: 15px;}
+article .outbox .xian { width: 83px; height: 3px; margin: -2px auto 0; background: #164370; }
+article .outbox p.cont { width: 1140px; margin: 45px auto 0; font-size: 20px; line-height: 35px;text-indent: 2em;color:#565554 }
+article .outbox .cBox { width: 1140px; margin: 0 auto; }
+article .outbox .cBox #chartA, article .outbox .cBox #chartB { width: 670px; height: 555px; float: left; }
+article .outbox .cBox #chartC, article .outbox .cBox #xlimg { width: 100%; height: 365px; }
+article .outbox .cBox #xlimg { text-align: center; }
+/*article .outbox .cBox #xlimg img { margin-top: 80px; }*/
+article .outbox .cBox ul { float: left; font-size: 30px; margin: 176px 0 0 82px; }
+article .outbox .cBox ul li { padding-left: 30px;  margin-bottom: 30px;font-size:24px;color:#565554 }
+article .outbox .cBox ul.flt { width: 960px; margin: 50px auto 0; float: none;}
+article .outbox .cBox ul.flt li { float: left; }
+article .outbox .cBox ul.flt li:nth-child(odd) { width: 50%; }
+article .outbox .cBox ul.flt li:nth-child(even) { float: right; }
+article .outbox.outboxbg { padding-bottom: 71px; background: url("../images/bg2.png") no-repeat center center; }
+article .outbox.outboxs { padding-bottom: 71px; }
+article .outbox.outboxbg2 { background:#dcdcdb; }
+
+#chartA,#chartB,#chartC,#chartD{
+    text-align: center;
+}

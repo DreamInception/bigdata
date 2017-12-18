@@ -1,0 +1,70 @@
+.conbox{
+    width:1140px;
+    margin:42px auto 20px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background: #fff;
+    padding:20px;
+}
+.conbox:nth-child(2){
+    margin:80px auto 0;
+}
+.til{
+    border-left: 2px solid #3D3730; padding-left: 10px; font-size: 16px; font-weight: bold; color: #565554; margin-bottom: 20px;
+}
+#echartA,#echartB{
+    width:100%;
+    height:600px;
+}
+.con p{
+    /*padding:0 0 0 45px;*/
+    /*text-indent: 2em;*/
+    /*color:#999*/
+    margin-bottom:15px;
+}
+
+
+.selectB{
+    margin:0;
+    position: relative;
+    height:100px;
+}
+.selectB input{
+    display:none;
+}
+.selectB label{
+    display: inline-block;
+    width:15px;
+    height:15px;
+    background:url("../images/qxcolor.png") no-repeat 0 -25px;
+    margin:3px 5px 0 0;
+    float:left;
+    cursor: pointer;
+}
+.selectB input:checked~label{
+    background:url("../images/qxcolor.png") no-repeat 0 0;
+}
+.selectB span{
+    line-height:21px;
+    float:left;
+    margin-right:22px;
+}
+.selectB span:nth-child(1){
+    display: block;
+    height:80px;
+}
+.qd{
+    position: absolute;
+    bottom:0;
+    left:50%;
+    margin-left:-34px;
+    margin-top:10px;
+    padding:5px 20px;
+    background:#164370;
+    color:#fff;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+}

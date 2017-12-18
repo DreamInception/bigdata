@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学习绩效分析</title>
+    <link rel="stylesheet" href="js/lib/jquery.datetimepicker.css">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/sa_learningPerformance.css">
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/jquery.datetimepicker.full.js"></script>
+    <!--<script src="js/lib/vue.js"></script>-->
+    <script src="js/lib/echarts.js"></script>
+    <script src="js/lib/jquery.selectBox.min.js"></script>
+   <!-- <script src="js/public.js"></script>-->
+    <script src="js/sa_learningPerformance.js"></script>
+</head>
+<body>
+    <article id="lp_app">
+      <!--  <v_header :cur="4"></v_header>-->
+        <header>
+            <div>
+                <a href="../index.html"></a>
+                <ul>
+                    <li>
+                        <a href="sa_index.html">首页</a>
+                    </li>
+                    <li>
+                        <a href="sa_comprehensiveAbilities.html">综合能力诊断</a>
+                    </li>
+                    <li>
+                        <a href="sa_learningDisability.html">学习困难评估</a>
+                    </li>
+                    <li>
+                        <a href="sa_learningPerformance.html" class="selected">学习绩效分析</a>
+                    </li>
+                    <li>
+                        <a href="sa_psychologicalDrawing.html">学生心理画像</a>
+                    </li>
+                </ul>
+                <div>
+                    <span>李梅，欢迎您！</span>
+                    <div>
+                        <img src="images/peo.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="contbox">
+            <ul class="clearfix tab">
+                <li class="select" data_index="0">考试分析</li>
+                <li data_index="1">作业分析</li>
+            </ul>
+            <ul class="tabcont">
+                <li>
+                   <div class="chartbox1">
+                       <div class="til">历次成绩对比</div>
+                       <div class="selectB">
+                           <!--<select>-->
+                               <!--<option value="2017-09">2017-09</option>-->
+                               <!--<option value="2017-10">2017-10</option>-->
+                               <!--<option value="2017-11">2017-11</option>-->
+                           <!--</select>-->
+                           <!--至-->
+                           <!--<select>-->
+                               <!--<option value="2017-09">2017-09</option>-->
+                               <!--<option value="2017-10">2017-10</option>-->
+                               <!--<option value="2017-11" selected="selected">2017-11</option>-->
+                           <!--</select>-->
+                           <input type="text" placeholder="2017-09-01" id="start1"> 至 <input type="text" placeholder="2017-11-30" id="end1">
+                       </div>
+                       <div id="chartA"></div>
+                   </div>
+                   <div class="chartbox2">
+                       <div class="til">历次成绩对比</div>
+                       <div class="selectB">
+                           <select>
+                               <option value="2017-09">语文</option>
+                               <option value="2017-10">数学</option>
+                               <option value="2017-11">英语</option>
+                               <option value="2017-11">物理</option>
+                           </select>
+                       </div>
+                       <div class="xb">
+                           <div id="chartB"></div>
+                           <div id="chartC"></div>
+                       </div>
+                   </div>
+                </li>
+                <li style="display: none;">
+                    <div class="chartbox1 chartbox1H">
+                        <div class="til"></div>
+                        <div class="selectB">
+                            <!--<select>-->
+                                <!--<option value="2017-09">2017-01</option>-->
+                                <!--<option value="2017-10">2017-06</option>-->
+                                <!--<option value="2017-11">2017-12</option>-->
+                            <!--</select>-->
+                            <!--至-->
+                            <!--<select>-->
+                                <!--<option value="2017-09">2017-01</option>-->
+                                <!--<option value="2017-10">2017-06</option>-->
+                                <!--<option value="2017-11" selected="selected">2017-12</option>-->
+                            <!--</select>-->
+                            <input type="text" placeholder="2017-09-01" id="start2"> 至 <input type="text" placeholder="2017-11-30" id="end2">
+                            <select>
+                                <option value="2017-09">语文</option>
+                                <option value="2017-10">数学</option>
+                                <option value="2017-11">英语</option>
+                                <option value="2017-11">物理</option>
+                            </select>
+                        </div>
+                        <div id="chartD" style="width:1098px;height:360px"></div>
+                    </div>
+                    <div class="chartbox2">
+                        <div class="til">作业通过率</div>
+                       <div class="xb">
+                           <div id="chartE" style="width:549px;height:350px"></div>
+                           <div id="chartF" style="width:549px;height:350px"></div>
+                       </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="recom">
+                <div class="til">同等水平推荐</div>
+                <img src="images/a.png" alt="">
+            </div>
+            <div class="suggest">
+                <div class="til">提升建议</div>
+                <div class="suggestcont"></div>
+            </div>
+        </div>
+    </article>
+    <footer class="bbs_footer">
+        <div class="bbs_footer_m">
+            <div class="bbs_footer_l">
+                <span class="bbs_footer_t">合作伙伴</span>
+                <ul>
+                    <li><a href="#">科大讯飞</a></li>
+                    <li><a href="#">北京师范大学</a></li>
+                    <li><a href="#">基础教育大数据国家工程实验室</a></li>
+                    <li><a href="#">洛阳市政府</a></li>
+                    <li><a href="#">MIT</a></li>
+                    <li><a href="#">Dublin City University</a></li>
+                    <li><a href="#">浙江金华市政府</a></li>
+                    <li><a href="#">University of Piraeus</a></li>
+                    <li><a href="#">OUC (Barcelona)</a></li>
+                    <li><a href="#">贵州清镇市</a></li>
+                    <li><a href="#">Athabasca University </a></li>
+                    <li><a href="#">UNESCO on e-learning & OER </a></li>
+                    <li><a href="#">成都双流区</a></li>
+                    <li><a href="#">Harvard University </a></li>
+                    <li><a href="#">University of London</a></li>
+
+                </ul>
+            </div>
+            <div class="bbs_footer_r">
+                <a class="bbs_f_about" href="#">关于我们</a>
+                <span class="bbs_f_contact">联系方式</span>
+                <ul>
+                    <li><span>邮政编码：100875</span></li>
+                    <li><span>地址：学院南路12号京师科技大厦A座3楼</span></li>
+                    <li><span>邮箱：icome@bnu.edu.cn</span></li>
+                    <li><span>Copyright © 基础教育大数据应用研究院</span></li>
+                    <li>
+                        <a class="a1" href="#"></a>
+                        <a class="a2" href="#"></a>
+                        <a class="a3" href="#"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

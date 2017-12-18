@@ -1,0 +1,91 @@
+@import "compass";
+@import "config";
+article{
+  .peo_infor{
+    width:100%;
+    height:147px;
+    dl{
+      width:1140px;
+      height:100%;
+      margin:0 auto;
+      border-bottom:1px solid $borderColor;
+      dt{
+        width:80px;
+        height:80px;
+        @include border-radius(50%);
+        overflow: hidden;
+        float: left;
+        margin-top:33px;
+        border: 2px solid $borderColor;
+      }
+      dd{
+        padding-left:95px;
+        margin-bottom:4px;
+        &:nth-child(2){
+          font-size:18px;
+          padding-top:40px;
+        }
+      }
+    }
+  }
+  .con,.con1,.con3,.con4{
+    width:1140px;
+    height:376px;
+    margin:20px auto 0;
+    border:1px solid #cacaca;
+    @include border-radius(6px);
+    background: $whiteColor;
+    &.con1,&.con3,&.con4{
+      height:540px;
+      #chartA,#chartB,#chartC{
+        width:570px;
+        height:100%;
+        float:left;
+        &#chartB{
+          float:right;
+          margin-top:-21px;
+          height:490px;
+        }
+        &#chartC{
+          width:798px;
+          float:left;
+          height:490px;
+        }
+      }
+      &.con3,&.con4{
+        padding:20px 20px 0;
+        .til{
+          border-left:2px solid #3D3730;
+          padding-left:10px;
+          font-size:16px;
+          font-weight:bold;
+          color:#565554;
+        }
+        p{
+          width:387px;
+          float: left;
+          margin-top:180px;
+        }
+        &.con4{
+          margin-bottom:34px;
+          p{
+            float:right;
+            width:300px;
+          }
+        }
+      }
+      &.con1{
+        text-align: center;
+        img{
+          margin-top:30px;
+        }
+      }
+    }
+    &.con{
+      text-align: center;
+      img{
+        margin-top:50px;
+      }
+    }
+  }
+}

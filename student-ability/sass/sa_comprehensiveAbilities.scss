@@ -1,0 +1,261 @@
+@import "compass";
+@import "config";
+article{
+  .peo_infor{
+    width:100%;
+    height:147px;
+    dl{
+      width:1140px;
+      height:100%;
+      margin:0 auto;
+      border-bottom:1px solid $borderColor;
+      dt{
+        width:80px;
+        height:80px;
+        @include border-radius(50%);
+        overflow: hidden;
+        float: left;
+        margin-top:33px;
+        border: 2px solid $borderColor;
+      }
+      dd{
+        padding-left:95px;
+        margin-bottom:4px;
+        &:nth-child(2){
+          font-size:18px;
+          padding-top:40px;
+        }
+      }
+    }
+  }
+  .show{
+    width:1140px;
+    height:490px;
+    margin:0 auto;
+    padding-top:38px;
+    &>dl{
+      float:left;
+      width:500px;
+      dt,dd{
+        margin-bottom:30px;
+        @include pie-clearfix();
+        p{
+          float:left;
+          line-height:20px;
+          width:92px;
+          cursor:pointer;
+        }
+        span{
+          color:#999999;
+        }
+        img{
+          float:left;
+          margin:-20px 8px 0 0;
+        }
+      }
+      dt{
+        font-size:16px;
+        p{
+          &:hover,&.select{
+            color:#164370;
+          }
+        }
+      }
+      dd{
+        height:20px;
+        &>div{
+          float:left;
+          width:197px;
+          height:10px;
+          background: $borderColor;
+          margin:5px 8px 0 0;
+          position: relative;
+          div{
+            position: absolute;
+            top:0;
+            left:0;
+            height:100%;
+          }
+        }
+        &:nth-child(2){
+          p{
+            &:hover,&.select{
+              color:#f15246;
+            }
+          }
+        }
+        &:nth-child(3){
+          p{
+            &:hover,&.select{
+              color:#ffa627;
+            }
+          }
+        }
+        &:nth-child(4){
+          p{
+            &:hover,&.select{
+              color:#f5cf53;
+            }
+          }
+        }
+        &:nth-child(5){
+          p{
+            &:hover,&.select{
+              color:#2ebe50;
+            }
+          }
+        }
+        &:nth-child(6){
+          p{
+            &:hover,&.select{
+              color:#3ac2ce;
+            }
+          }
+        }
+        &:nth-child(7){
+          p{
+            &:hover,&.select{
+              color:#3674e6;
+            }
+          }
+        }
+        &:nth-child(8){
+          p{
+            &:hover,&.select{
+              color:#803cd8;
+            }
+          }
+        }
+        &:nth-child(9){
+          p{
+            &:hover,&.select{
+              color:#cd62c6;
+            }
+          }
+        }
+      }
+    }
+   &>div{
+     position: relative;
+     float:left;
+     &>div{
+       display: none;
+       position: absolute;
+       top:0;
+       left:0;
+       display: none;
+     }
+     #chartA,#chartE,.provSolv,#chartF,#chartG,.abiThink,#chartH{
+       width:640px;
+       height:450px;
+     }
+     .chartB{
+       #chartB1,#chartB2,#chartB3{
+         width:140px;
+         height:140px;
+         margin-left:200px;
+       }
+     }
+     .chartC,#chartH{
+       width:640px;
+       margin-top:100px;
+       #chartC1,#chartC2,#chartC3,#chartH1,#chartH2{
+         width:180px;
+         height:140px;
+         float:left;
+       }
+       .hintword{
+         float:left;
+         width:130px;
+         height:30px;
+         margin:30px 25px 0;
+         text-align: center;
+         line-height:30px;
+         background: #2ebe50;
+         @include border-radius(10px);
+         color: $whiteColor;
+       }
+     }
+     .chartD{
+       #chartD1,#chartD2{
+         width:140px;
+         height:140px;
+         margin-left:200px;
+       }
+       #chartD1{
+        margin:60px 0 20px 200px;
+       }
+     }
+     .provSolv{
+       float:left;
+       padding:120px 0 0 66px;
+       dd{
+         height:23px;
+         margin-bottom:50px;
+         @include pie-clearfix();
+         p{
+           float:left;
+           line-height:23px;
+           width:92px;
+         }
+         span{
+           color:#999999;
+           line-height:23px;
+         }
+         &>div{
+           float:left;
+           width:300px;
+           height:23px;
+           background: rgba(128,60,216,0.5);
+           margin:0 8px 0 0;
+           position: relative;
+           @include border-radius(10px);
+           div{
+             position: absolute;
+             top:0;
+             left:0;
+             height:100%;
+             background: rgba(128,60,216,1);
+             @include border-radius(10px);
+           }
+         }
+       }
+     }
+     #chartH{
+       width:400px;
+       height:auto;
+       margin-left:100px;
+     }
+   }
+    &.show1{
+      dd:nth-child(4){
+        p{
+          &:hover,&.select{
+            color:#2ebe50;
+          }
+        }
+      }
+    }
+  }
+  div.contshow{
+    width:100%;
+    height:368px;
+    background: url("../images/bg.png") no-repeat center;
+    .contshowbox{
+      width:1140px;
+      padding-top:40px;
+      margin:0 auto;
+      div{
+        margin-bottom:18px;
+        span{
+          font-size:24px;
+          margin-right:10px;
+        }
+      }
+      p{
+          text-indent: 2em;
+        line-height:24px;
+      }
+    }
+  }
+}
